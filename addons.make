@@ -1,0 +1,6 @@
+ofxAssimpModelLoader
+ofxNetwork
+ofxXmlSettings
+ofxAnimatable
+ofxJSON
+ofxTimer
