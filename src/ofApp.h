@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofNetworkManager.h"
+#include "ofRoom.h"
 
 class ofApp : public ofBaseApp{
 
@@ -22,5 +23,6 @@ class ofApp : public ofBaseApp{
 		
     private:
         ofNetworkManager *networkManager;
+        ofRoom *room;
     
 };

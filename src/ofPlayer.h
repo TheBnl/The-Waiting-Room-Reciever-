@@ -8,14 +8,16 @@ class ofPlayer {
 public:
     
     ofPlayer(string name);
-    void update();
+    void update(float _roomWidth);
     void draw();
     
     
 private:
     string name;
+    float playerRadius;
     float x;
     float y;
+    float z;
     
 };
 

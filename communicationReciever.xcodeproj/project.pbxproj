@@ -12,6 +12,8 @@
 		1E4E534800029EEB7B587AE1 /* ofxAnimatableOfPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44CDB9F986B865F09BFCE332 /* ofxAnimatableOfPoint.cpp */; };
 		2117121D1AB2227A00A65305 /* ofNetworkManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2117121B1AB2227A00A65305 /* ofNetworkManager.cpp */; };
 		211712201AB2366700A65305 /* ofPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2117121E1AB2366700A65305 /* ofPlayer.cpp */; };
+		211712231AB5ABFA00A65305 /* ofRoom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 211712211AB5ABFA00A65305 /* ofRoom.cpp */; };
+		211712261AB6143200A65305 /* ofRoomLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 211712241AB6143200A65305 /* ofRoomLight.cpp */; };
 		263BE728163BB0A0DF13E722 /* ofxTCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DE04911DB4C867BD92C3E54 /* ofxTCPServer.cpp */; };
 		2DB8BA305998C35815E71149 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28E72F511FA8AFD597BC88C6 /* ofxXmlSettings.cpp */; };
 		37E3F1E90FEA69705D41EF36 /* ofxUDPManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CED61F6F90DE43944CE7511 /* ofxUDPManager.cpp */; };
@@ -90,6 +92,10 @@
 		2117121C1AB2227A00A65305 /* ofNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofNetworkManager.h; sourceTree = "<group>"; };
 		2117121E1AB2366700A65305 /* ofPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofPlayer.cpp; sourceTree = "<group>"; };
 		2117121F1AB2366700A65305 /* ofPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofPlayer.h; sourceTree = "<group>"; };
+		211712211AB5ABFA00A65305 /* ofRoom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofRoom.cpp; sourceTree = "<group>"; };
+		211712221AB5ABFA00A65305 /* ofRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofRoom.h; sourceTree = "<group>"; };
+		211712241AB6143200A65305 /* ofRoomLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofRoomLight.cpp; sourceTree = "<group>"; };
+		211712251AB6143200A65305 /* ofRoomLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofRoomLight.h; sourceTree = "<group>"; };
 		28E72F511FA8AFD597BC88C6 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxXmlSettings.cpp; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxXmlSettings/src/ofxXmlSettings.cpp; sourceTree = SOURCE_ROOT; };
 		2B3B549F1F552D912A05592D /* ofxAnimatableFloat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxAnimatableFloat.h; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxAnimatable/src/ofxAnimatableFloat.h; sourceTree = SOURCE_ROOT; };
 		2EE80221CC9CF0184654308B /* ofxJSONElement.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxJSONElement.cpp; path = ../../Libs/of_v0.8.4_osx_release/addons/ofxJSON/src/ofxJSONElement.cpp; sourceTree = SOURCE_ROOT; };
@@ -479,6 +485,10 @@
 				2117121C1AB2227A00A65305 /* ofNetworkManager.h */,
 				2117121E1AB2366700A65305 /* ofPlayer.cpp */,
 				2117121F1AB2366700A65305 /* ofPlayer.h */,
+				211712211AB5ABFA00A65305 /* ofRoom.cpp */,
+				211712221AB5ABFA00A65305 /* ofRoom.h */,
+				211712241AB6143200A65305 /* ofRoomLight.cpp */,
+				211712251AB6143200A65305 /* ofRoomLight.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -636,6 +646,7 @@
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				456A6BD7B4A5718FECEEF1D7 /* ofxAssimpAnimation.cpp in Sources */,
 				0A2E7DF3156849C0F0DCA208 /* ofxAssimpMeshHelper.cpp in Sources */,
+				211712261AB6143200A65305 /* ofRoomLight.cpp in Sources */,
 				BFCAD4B78BA542461C3F76B5 /* ofxAssimpModelLoader.cpp in Sources */,
 				D9446B36A6ADF8D8E1DAD8EE /* ofxAssimpTexture.cpp in Sources */,
 				FD713D3A8B43C6F77152A72B /* ofxTCPClient.cpp in Sources */,
@@ -645,6 +656,7 @@
 				37E3F1E90FEA69705D41EF36 /* ofxUDPManager.cpp in Sources */,
 				2DB8BA305998C35815E71149 /* ofxXmlSettings.cpp in Sources */,
 				84BB2AF01D26D400C0218233 /* tinyxml.cpp in Sources */,
+				211712231AB5ABFA00A65305 /* ofRoom.cpp in Sources */,
 				54CBCF758DE3EDA6B7D9408C /* tinyxmlerror.cpp in Sources */,
 				4A7820694D140AE4156CAFF6 /* tinyxmlparser.cpp in Sources */,
 				ACC44353304AF42CB657851B /* ofxAnimatable.cpp in Sources */,

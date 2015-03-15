@@ -5,23 +5,26 @@
 #include "ofxNetwork.h"
 #include "ofxJSON.h"
 #include "ofPlayer.h"
+#include "ofRoomLight.h"
 
 class ofNetworkManager {
     
     public:
         
         ofNetworkManager();
-        void update();
+        void update(float roomWidth, float roomHeight, float roomDepth);
         void draw(int x, int y);
     
     
     private:
     
         ofxUDPManager connection;
-        //vector<ofPlayer> players;
         std::map<string, ofPlayer> players;
+        ofRoomLight light;
         ofxJSONElement json;
         string message;
+        float roomWidth;
+        float roomHeight;
     
 };
 

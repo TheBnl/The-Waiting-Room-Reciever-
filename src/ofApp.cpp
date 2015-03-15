@@ -2,16 +2,22 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    ofBackground(0, 0, 0);
+    glEnable(GL_DEPTH_TEST);
+    
     networkManager = new ofNetworkManager();
+    room = new ofRoom();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    networkManager->update();
+    networkManager->update(room->getRoomWidth(), room->getRoomHeight(), room->getRoomDepth());
+    room->update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    room->draw();
     networkManager->draw(10, 15);
 }
 
