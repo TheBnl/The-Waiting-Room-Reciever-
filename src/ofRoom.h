@@ -3,6 +3,7 @@
 
 #include "ofMain.h"
 #include "ofRoomLight.h"
+#include "ofClock.h"
 
 class ofRoom {
     
@@ -28,6 +29,7 @@ private:
     
     ofCamera camera;
     ofRoomLight light;
+    ofClock clock;
     float width;
     float height;
     float depth;

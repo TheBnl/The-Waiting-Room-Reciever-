@@ -5,6 +5,8 @@ ofNetworkManager::ofNetworkManager()
     connection.Create();
     connection.Bind(11999);
     connection.SetNonBlocking(true);
+    
+    model.loadModel("stickmannocomputer.dae");
 }
 
 
@@ -47,7 +49,7 @@ void ofNetworkManager::update(float _roomWidth, float _roomHeight, float _roomDe
 void ofNetworkManager::draw(int x, int y)
 {
     ofDrawBitmapString("Listening to port: 11999", x, y);
-    ofDrawBitmapString(message, x, y + 25);
+    ofDrawBitmapString(message, x, y + 15);
     
     light.enable();
     light.draw();
@@ -57,6 +59,12 @@ void ofNetworkManager::draw(int x, int y)
     typedef map<string, ofPlayer>::iterator it_type;
     for(it_type iterator = players.begin(); iterator != players.end(); iterator++) {
         iterator->second.draw();
+        ofPoint position = iterator->second.getPosition();
+        //string name = iterator->second.getName();
+        model.setPosition(position.x, position.y, position.z);
+        model.drawFaces();
     }
     light.disable();
 }
+
+

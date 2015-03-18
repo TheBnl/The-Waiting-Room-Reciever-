@@ -12,8 +12,6 @@ ofRoom::ofRoom()
     rightWall.set(1, height, depth);
     floor.set(width, 1, depth);
     
-    //light = *new ofRoomLight();
-    
     //camera.setupPerspective();
     //camera.setNearClip(0);
     //camera.setFarClip(depth+20);
@@ -39,6 +37,8 @@ void ofRoom::update()
     
     light.update(width, height, depth);
     
+    clock.update(width*0.75, 200, depth);
+    
     //camera.setFarClip(depth+20);
     //camera.setPosition(width*0.5, height*0.5, depth*0.8);
 }
@@ -55,10 +55,13 @@ void ofRoom::draw()
     ofSetColor(175, 175, 175);
     leftWall.draw();
     rightWall.draw();
-    ofSetColor(155, 155, 155);
+    ofSetColor(150, 150, 150);
     backWall.draw();
     ofSetColor(145, 145, 145);
     floor.draw();
+    
+    ofSetColor(135, 135, 135);
+    clock.draw();
     
     ofSetColor(255, 0, 0);
     ofDrawSphere(0, 0, 0, 10);

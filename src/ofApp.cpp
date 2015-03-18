@@ -3,6 +3,7 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofBackground(0, 0, 0);
+    ofSetVerticalSync(true);
     glEnable(GL_DEPTH_TEST);
     
     networkManager = new ofNetworkManager();

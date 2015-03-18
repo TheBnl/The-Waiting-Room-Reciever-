@@ -7,6 +7,9 @@
 #include "ofPlayer.h"
 #include "ofRoomLight.h"
 
+#include "ofxAssimpModelLoader.h"
+#include "ofxAssimpAnimation.h"
+
 class ofNetworkManager {
     
     public:
@@ -17,7 +20,7 @@ class ofNetworkManager {
     
     
     private:
-    
+        ofxAssimpModelLoader model;
         ofxUDPManager connection;
         std::map<string, ofPlayer> players;
         ofRoomLight light;
